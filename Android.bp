@@ -5,6 +5,7 @@
 soong_namespace {
 	imports: [
 		"vendor/xiaomi/msm8996-common",
+		"device/xiaomi/lithium",
 	],
 }
 
@@ -17,10 +18,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libactuator_dw9763_a8_o-film.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -34,10 +35,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libactuator_dw9763_a8_qtech.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -51,10 +52,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_common.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -68,10 +69,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_cpp_hfr_120.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -85,10 +86,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_cpp_hfr_60.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -102,10 +103,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_cpp_hfr_90.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -119,10 +120,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_cpp_liveshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -136,10 +137,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_cpp_preview.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -153,10 +154,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_cpp_snapshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -170,10 +171,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_cpp_video.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -187,10 +188,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_default_preview_3a.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -204,10 +205,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_default_video.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -221,10 +222,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_default_video_3a.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -238,10 +239,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_hfr_120.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -255,10 +256,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_hfr_120_3a.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -272,10 +273,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_hfr_60.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -289,10 +290,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_hfr_60_3a.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -306,10 +307,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_hfr_90.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -323,10 +324,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_hfr_90_3a.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -340,10 +341,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_liveshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -357,10 +358,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_postproc.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -374,10 +375,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_preview.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -391,10 +392,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_snapshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -408,10 +409,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_zsl_preview_3a.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -425,10 +426,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov16880_zsl_video_3a.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -442,10 +443,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_a3_default_preview.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -459,10 +460,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_a3_default_video.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -476,10 +477,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_a3_hfr_120.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -493,10 +494,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_a3_hfr_60.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -510,10 +511,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_a3_hfr_90.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -527,10 +528,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_common.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -544,10 +545,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_cpp_ds_chromatix.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -561,10 +562,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_cpp_hfr_120.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -578,10 +579,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_cpp_hfr_60.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -595,10 +596,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_cpp_hfr_90.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -612,10 +613,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_cpp_liveshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -629,10 +630,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_cpp_preview.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -646,10 +647,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_cpp_snapshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -663,10 +664,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_cpp_us_chromatix.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -680,10 +681,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_cpp_video.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -697,10 +698,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_cpp_video_full.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -714,10 +715,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_default_video.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -731,10 +732,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_hfr_120.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -748,10 +749,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_hfr_60.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -765,10 +766,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_hfr_90.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -782,10 +783,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_postproc.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -799,10 +800,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_preview.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -816,10 +817,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_snapshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -833,10 +834,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_video_full.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -850,10 +851,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_zsl_preview.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -867,10 +868,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_ov5675_primax_zsl_video.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -884,10 +885,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_common.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -901,10 +902,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_cpp_hfr_120.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -918,10 +919,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_cpp_hfr_60.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -935,10 +936,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_cpp_hfr_90.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -952,10 +953,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_cpp_liveshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -969,10 +970,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_cpp_preview.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -986,10 +987,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_cpp_snapshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1003,10 +1004,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_cpp_video.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1020,10 +1021,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_default_preview.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1037,10 +1038,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_default_video.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1054,10 +1055,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_hfr_120.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1071,10 +1072,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_hfr_120_3a.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1088,10 +1089,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_hfr_60.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1105,10 +1106,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_hfr_60_3a.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1122,10 +1123,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_hfr_90.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1139,10 +1140,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_hfr_90_3a.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1156,10 +1157,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_liveshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1173,10 +1174,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_postproc.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1190,10 +1191,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_preview.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1207,10 +1208,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_snapshot.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1224,10 +1225,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_zsl_preview.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1241,10 +1242,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libchromatix_s5k3p3_qtech_zsl_video.so"],
+			shared_libs: ["libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1258,10 +1259,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmmcamera_ov16880.so"],
+			shared_libs: ["libcutils", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1275,10 +1276,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmmcamera_ov16880_ofilm_eeprom.so"],
+			shared_libs: ["liblog", "libcutils", "libmmcamera_eeprom_util", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1292,10 +1293,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmmcamera_ov5675_primax.so"],
+			shared_libs: ["libcutils", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1309,10 +1310,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmmcamera_s5k3p3_qtech.so"],
+			shared_libs: ["libcutils", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1326,10 +1327,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmmcamera_s5k3p3_qtech_eeprom.so"],
+			shared_libs: ["libcutils", "libmmcamera_eeprom_util", "liblog", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1343,10 +1344,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/fingerprint.fpc.so"],
+			shared_libs: ["liblog", "libQSEEComAPI", "libcutils", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	relative_install_path: "hw",
 	prefer: true,
 	soc_specific: true,
@@ -1361,10 +1362,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libpn551_fw.so"],
+			shared_libs: [ ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -1378,10 +1379,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/sensors.elliptic.so"],
+			shared_libs: ["libnotifyaudiohal", "liblog", "libc", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
